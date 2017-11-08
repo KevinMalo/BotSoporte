@@ -1,0 +1,34 @@
+{
+  "contexts": [" "],
+  "events": [],
+  "fallbackIntent": False,
+  "name": cat, // categoria
+  "priority": 500000,
+  "responses": [{
+    "action": "add.list",
+    "defaultResponsePlatforms": {
+      "google": True
+    },
+    "messages": [{
+      "platform": "google",
+      "textToSpeech": "z",
+      "type": "simple_response"
+    }, {
+      "speech": respuestas, // array de respuestas
+      "type": 0
+    }],
+    "parameters": [{
+      "dataType": "0",
+      "isList": True,
+      "name": "0",
+      "prompts": [" li "],
+      "required": True,
+      "value": "0"
+    }],
+    "resetContexts": False
+  }],
+  "templates": ["c:c ", "b:b ", "a:a "],
+  "userSays": preguntas, // array preguntas
+  "webhookForSlotFilling": False,
+  "webhookUsed": False
+}

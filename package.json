@@ -1,0 +1,26 @@
+{
+  "name": "botsoporte",
+  "version": "1.0.0",
+  "description": "Bot de soprote tecnico",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinMalo/BotSoporte.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Kevin Andrey Bueno Solano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinMalo/BotSoporte/issues"
+  },
+  "homepage": "https://github.com/KevinMalo/BotSoporte#readme"
+}
