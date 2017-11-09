@@ -46,17 +46,17 @@
 
 
     <!-- The above form looks like this -->
-    <form>
+    <form action="formulario" method="post">
 
       <div class="row">
         <div class="seven columns">
-          <label for="exampleEmailInput">Pregunta</label>
-          <input class="u-full-width" type="text" placeholder="Escribe la pregunta" id="exampleEmailInput">
+          <label for="exampleEmailInput">Preguntas</label>
+          <input class="u-full-width" type="text" placeholder="Escribe la pregunta" name="pregunta" id="pregunta">
         </div>
 
           <div class="five columns">
             <label for="exampleRecipientInput">Categoria</label>
-            <select class="u-full-width" id="exampleRecipientInput">
+            <select name="categoria" class="u-full-width" id="exampleRecipientInput">
               <option value="News & Events">News & Events</option>
               <option value="About IT Projects">About IT Projects</option>
               <option value="About public and civic software">About public and civic software</option>
@@ -70,7 +70,7 @@
         </div>
 
         <label for="exampleMessage">Respuesta</label>
-        <textarea class="u-full-width" placeholder="Escribe la respuesta" id="exampleMessage"></textarea>
+        <textarea name="respuesta" class="u-full-width" placeholder="Escribe la respuesta" id="exampleMessage"></textarea>
 
         <input class="button-primary" type="submit" value="Enviar">
     </form>

@@ -14,7 +14,7 @@
         "textToSpeech": "z",
         "type": "simple_response"
       }, {
-        "speech": str(categorias_filtradas),
+        "speech": respuestas,
         "type": 0
       }],
       "parameters": [{
@@ -28,7 +28,8 @@
       "resetContexts": False
     }],
     "templates": ["c:c ", "b:b ", "a:a "],
-    "userSays": str(preguntas),
+    "userSays": preguntas,
     "webhookForSlotFilling": False,
     "webhookUsed": False
   }
+

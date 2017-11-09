@@ -1,34 +1,46 @@
 {
-  "contexts": [" "],
+  "contexts": [
+    ""
+  ],
   "events": [],
-  "fallbackIntent": False,
-  "name": cat, // categoria
+  "fallbackIntent": false,
+  "name": categoria,
   "priority": 500000,
-  "responses": [{
-    "action": "add.list",
-    "defaultResponsePlatforms": {
-      "google": True
-    },
-    "messages": [{
-      "platform": "google",
-      "textToSpeech": "z",
-      "type": "simple_response"
-    }, {
-      "speech": respuestas, // array de respuestas
-      "type": 0
-    }],
-    "parameters": [{
-      "dataType": "0",
-      "isList": True,
-      "name": "0",
-      "prompts": [" li "],
-      "required": True,
-      "value": "0"
-    }],
-    "resetContexts": False
-  }],
+  "responses": [
+    {
+      "action": "add.list",
+      "affectedContexts": [],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "messages": [
+        {
+          "platform": "google",
+          "textToSpeech": "Okay",
+          "type": "simple_response"
+        },
+        {
+          "speech": respuestas,
+          "type": 0
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "0",
+          "isList": true,
+          "name": "0",
+          "prompts": [
+            "li"
+          ],
+          "required": true,
+          "value": "0"
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
   "templates": ["c:c ", "b:b ", "a:a "],
-  "userSays": preguntas, // array preguntas
-  "webhookForSlotFilling": False,
-  "webhookUsed": False
+  "userSays": preguntas,
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
 }
