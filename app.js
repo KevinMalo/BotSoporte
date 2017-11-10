@@ -70,10 +70,12 @@ app.post('/formulario', function (req, res) {
       console.log(response.body);
     });
 
+    res.redirect('/formulario');
+
 })
 
 //////
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('App funcionando en el puerto 3000!');
 });
